@@ -68,7 +68,6 @@ function Swipe(container, options) {
       slide.setAttribute('data-index', pos);
 
       if (browser.transitions) {
-        slide.style.left = (pos * -width) + 'px';
         move(pos, index > pos ? -width : (index < pos ? width : 0), 0);
       }
 
